@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="jVJ-i2-1PT">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Custom Nav Controller-->
+        <scene sceneID="0Zo-HC-eZw">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="jVJ-i2-1PT" customClass="CustomNavController" customModule="SoundCloud" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" hidden="YES" contentMode="scaleToFill" id="u06-cs-GFj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="DFh-l1-Jv6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="toR-C4-3rl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-774" y="-61"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SoundCloud" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WoodTexture" translatesAutoresizingMaskIntoConstraints="NO" id="xKQ-lf-Pr4">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="g0D-rt-zMq">
+                                <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="rQY-Xg-U8C">
+                                        <rect key="frame" x="0.0" y="0.0" width="768" height="50"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WhT-FS-Whi">
+                                                <rect key="frame" x="0.0" y="0.0" width="252.5" height="50"/>
+                                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="20"/>
+                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Memory" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ne3-6D-uA7">
+                                                <rect key="frame" x="257.5" y="0.0" width="253" height="50"/>
+                                                <fontDescription key="fontDescription" name="Copperplate-Light" family="Copperplate" pointSize="22"/>
+                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="highlightedColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <size key="shadowOffset" width="-2" height="2"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yew-RF-kuf">
+                                                <rect key="frame" x="515.5" y="0.0" width="252.5" height="50"/>
+                                                <state key="normal" title="Reset" backgroundImage="glossyWoodButtonSmall">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="resetGame" destination="BYZ-38-t0r" eventType="touchUpInside" id="Iaz-96-chp"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Sgt-yY-Kjj"/>
+                                            <constraint firstAttribute="width" priority="750" constant="115" id="fHh-bj-U7e"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="fHh-bj-U7e"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=compact-widthClass=compact" axis="vertical">
+                                            <mask key="constraints">
+                                                <exclude reference="Sgt-yY-Kjj"/>
+                                                <include reference="fHh-bj-U7e"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=compact-widthClass=regular" axis="vertical">
+                                            <mask key="constraints">
+                                                <exclude reference="Sgt-yY-Kjj"/>
+                                                <include reference="fHh-bj-U7e"/>
+                                            </mask>
+                                        </variation>
+                                    </stackView>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Xp1-Pu-M80">
+                                        <rect key="frame" x="0.0" y="50" width="768" height="768"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Xp1-Pu-M80" secondAttribute="height" multiplier="1:1" id="ACG-2H-hHb"/>
+                                        </constraints>
+                                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="2" minimumInteritemSpacing="0.0" id="htJ-Rb-3xN">
+                                            <size key="itemSize" width="81" height="81"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <activityIndicatorView key="backgroundView" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" id="xsR-hh-jc4">
+                                            <rect key="frame" x="0.0" y="0.0" width="768" height="768"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="color" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </activityIndicatorView>
+                                        <cells>
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="flipCardCell" id="ztg-ZR-caI" customClass="FlipCardCollectionViewCell" customModule="SoundCloud" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="81" height="81"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                                    <rect key="frame" x="0.0" y="0.0" width="81" height="81"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QLU-TF-w33">
+                                                            <rect key="frame" x="8" y="8" width="65" height="65"/>
+                                                        </imageView>
+                                                    </subviews>
+                                                </view>
+                                                <constraints>
+                                                    <constraint firstItem="QLU-TF-w33" firstAttribute="top" secondItem="ztg-ZR-caI" secondAttribute="topMargin" id="98w-ex-i9U"/>
+                                                    <constraint firstAttribute="bottomMargin" secondItem="QLU-TF-w33" secondAttribute="bottom" id="ZJ2-ev-ipo"/>
+                                                    <constraint firstAttribute="trailingMargin" secondItem="QLU-TF-w33" secondAttribute="trailing" id="rgO-Hw-RCu"/>
+                                                    <constraint firstItem="QLU-TF-w33" firstAttribute="leading" secondItem="ztg-ZR-caI" secondAttribute="leadingMargin" id="tks-MD-9nn"/>
+                                                </constraints>
+                                                <connections>
+                                                    <outlet property="imageView" destination="QLU-TF-w33" id="aua-po-LwS"/>
+                                                </connections>
+                                            </collectionViewCell>
+                                        </cells>
+                                        <connections>
+                                            <outlet property="dataSource" destination="BYZ-38-t0r" id="iZh-6V-Zac"/>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="xhm-eq-PLW"/>
+                                        </connections>
+                                    </collectionView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Zgz-gG-IB3">
+                                        <rect key="frame" x="0.0" y="818" width="768" height="186"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="bwM-0W-RjK">
+                                                <rect key="frame" x="256" y="0.0" width="256" height="186"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <size key="titleShadowOffset" width="2" height="2"/>
+                                                <state key="normal" title="Retry" backgroundImage="glossyWoodButtonSmall">
+                                                    <color key="titleColor" red="0.92606169871794874" green="0.90644841852038049" blue="0.7244743791100493" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="retryDownloadBtnTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="mCH-Vy-JF9"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" priority="750" constant="120" id="wnh-2w-X4u"/>
+                                        </constraints>
+                                        <variation key="heightClass=compact-widthClass=compact" axis="horizontal"/>
+                                        <variation key="heightClass=compact-widthClass=regular" axis="horizontal"/>
+                                    </stackView>
+                                </subviews>
+                                <variation key="heightClass=compact-widthClass=compact" axis="horizontal"/>
+                                <variation key="heightClass=compact-widthClass=regular" axis="horizontal"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="g0D-rt-zMq" secondAttribute="trailing" id="2T1-dj-zLg"/>
+                            <constraint firstItem="g0D-rt-zMq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="4a2-p1-t2m"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="g0D-rt-zMq" secondAttribute="bottom" id="8Fu-Qu-qQ6"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="xKQ-lf-Pr4" secondAttribute="bottom" id="crO-pS-4lK"/>
+                            <constraint firstItem="g0D-rt-zMq" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="hsN-sR-3kP"/>
+                            <constraint firstItem="xKQ-lf-Pr4" firstAttribute="topMargin" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-12" id="p2i-MT-b4i"/>
+                            <constraint firstAttribute="leading" secondItem="xKQ-lf-Pr4" secondAttribute="leading" id="px0-Z0-376"/>
+                            <constraint firstAttribute="trailing" secondItem="xKQ-lf-Pr4" secondAttribute="trailing" id="tWs-Bd-EDd"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="jJ8-0d-voL"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <connections>
+                        <outlet property="activityView" destination="xsR-hh-jc4" id="7DX-RA-WPT"/>
+                        <outlet property="collectionView" destination="Xp1-Pu-M80" id="ixe-Bv-qyn"/>
+                        <outlet property="gameClockLabel" destination="WhT-FS-Whi" id="PbX-q9-MrZ"/>
+                        <outlet property="resetButton" destination="Yew-RF-kuf" id="en3-fe-U6Q"/>
+                        <outlet property="retryButton" destination="bwM-0W-RjK" id="2Ci-Sn-OsL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="WoodTexture" width="800" height="1280"/>
+        <image name="glossyWoodButtonSmall" width="256" height="256"/>
+    </resources>
+</document>

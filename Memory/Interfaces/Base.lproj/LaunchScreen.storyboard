@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WoodTexture" translatesAutoresizingMaskIntoConstraints="NO" id="JKB-gk-QuE">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mike Jones" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S9K-vS-ArI" userLabel="Mike Jones">
+                                <rect key="frame" x="16" y="251.5" width="343" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Memory" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rXk-c4-tfC">
+                                <rect key="frame" x="16" y="278.5" width="343" height="57"/>
+                                <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="49"/>
+                                <color key="textColor" red="0.49904327621663713" green="0.55088408561280189" blue="0.71558493589743588" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coding Challenge" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HL5-M8-tAc">
+                                <rect key="frame" x="16" y="370.5" width="343" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="JKB-gk-QuE" secondAttribute="bottom" id="5zy-8D-T66"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rXk-c4-tfC" secondAttribute="trailing" id="9QI-Fh-6pz"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="HL5-M8-tAc" secondAttribute="leading" id="CNx-QD-3Vw"/>
+                            <constraint firstItem="JKB-gk-QuE" firstAttribute="topMargin" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="-12" id="Fcc-lX-KQA"/>
+                            <constraint firstItem="JKB-gk-QuE" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="GEX-tS-woZ"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="S9K-vS-ArI" secondAttribute="leading" id="MWM-p3-xTo"/>
+                            <constraint firstItem="rXk-c4-tfC" firstAttribute="top" secondItem="S9K-vS-ArI" secondAttribute="bottom" constant="5" id="PZO-yO-I5u"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="rXk-c4-tfC" secondAttribute="leading" id="RN9-L2-d1Q"/>
+                            <constraint firstItem="rXk-c4-tfC" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" multiplier="0.92" id="T3r-Ik-9NC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="HL5-M8-tAc" secondAttribute="trailing" id="aS3-gm-G7M"/>
+                            <constraint firstAttribute="trailing" secondItem="JKB-gk-QuE" secondAttribute="trailing" id="eha-dk-n4i"/>
+                            <constraint firstItem="HL5-M8-tAc" firstAttribute="top" secondItem="rXk-c4-tfC" secondAttribute="bottom" constant="35" id="mVp-tF-m7E"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="S9K-vS-ArI" secondAttribute="trailing" id="mjk-y7-Cxa"/>
+                        </constraints>
+                    </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="WoodTexture" width="800" height="1280"/>
+    </resources>
+</document>
