@@ -1,7 +1,6 @@
 # Memory Game
 - iOS Coding Challenge
 - Author: Mike Jones
-- Origin Date: February 9, 2017
 
 ## Summary
 Traditional "memory" card game. Interface constructed using UICollectionView grid layout. Images sourced from album art using SoundCloud's remote WebService API.
