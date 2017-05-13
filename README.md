@@ -1,6 +1,7 @@
 # Memory Game
 - iOS Coding Challenge
 - Author: Mike Jones
+- Origin Date: February 9, 2017
 
 ## Summary
 4x4 memory game. Images sourced from album covers using SoundCloud's remote WebService API.
