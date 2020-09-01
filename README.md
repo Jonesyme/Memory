@@ -1,12 +1,13 @@
 # Memory Game
-- iOS Coding Challenge
-- Author: Mike Jones
 
-## Summary
-Traditional "memory" card game. Interface constructed using UICollectionView grid layout. Images sourced from album art using SoundCloud's remote WebService API.
+## Project Description
+- **Purpose:** iOS Coding Challenge
+- **Author:** Mike Jones
+- **Date:** May 13, 2017
+- **Summary:** Traditional "memory" card game. Interface constructed using UICollectionView grid layout. Images sourced from album art using remote WebService API.
 
-## Project Specs
-- Compiles on: XCode 8.3.2
-- Language: Swift 3.0
-- Device Target: iOS Universal (iPhone + iPad)
-- Target OS: iOS 10.2
+## Specs
+- **Compiler:** XCode 8.3.2
+- **Language:** Swift 3.0
+- **Device Family:** Universal (iPhone + iPad)
+- **Target:** iOS 10.2+
